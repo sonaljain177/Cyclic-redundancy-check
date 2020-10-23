@@ -18,9 +18,7 @@ public class CRC {
 		else if(data[0]==0)
 		{
 			for(int i=0;i<17;i++)
-			{
 				rem[i]=data[i]^div0[i];
-			}
 		}
 		for(int i=0;i<16;i++) 
 		{
@@ -28,7 +26,6 @@ public class CRC {
 		}
 		if(n+17<s1.length()) 
 			data[16]=(int)s1.charAt(n+17)-48;
-		
 	}
 	public static void main(String args[])
 	{
